@@ -5,6 +5,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+   background-color: rgb(241, 241, 241);
+   background-image: url("https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg");
+   
+    background-repeat: no-repeat;
+    background-size: 100vw 90vh;
+}
+
 nav p{
     font-size:12px;
     position: absolute;
@@ -17,11 +25,14 @@ nav>div{
     display: flex;
     align-items: center;
     position: sticky;
+    
 }
 
 nav{
     display: flex;
     justify-content: space-around;
+    background-color: white;
+    width: 100vw;
 }
 
 #nav-head{
@@ -29,14 +40,15 @@ nav{
     padding: 10px;
     border-left: 1px solid rgba(0, 0, 0, 0.37);
     padding-left: 20px;
-    margin-left: 50px; 
+    margin-left: 5%; 
     
 }
 
 nav a{
-    margin: 0 20px 0 3px;
+    margin: 0 30px 0 3px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
     
 
 }
@@ -47,34 +59,35 @@ nav a:hover{
 
 header{
     width: 100vw;
-    height: 85vh;
+    height: 82vh;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.175);
 }
-header>img{
-    width: 100%;
-    height: 100%;
-}
+
 
 header>div{
     position:absolute;
-    padding: 30px;
-    width: 35vw;
-    left: 25%;
+    padding: 20px;
+    width: 400px;
+    left: 250px;
+    right: 0;
     top: 47%;
     transform: translate(-50%, -50%);
     text-align: center;
-    height: 70%;
+    height: 60vh;
     background-color: rgba(240, 248, 255, 0);
     border-radius: 20px;
-    box-shadow: rgb(184, 184, 184) 0px 30px 60px -12px inset, rgba(222, 222, 222, 0.767) 0px 18px 36px -18px inset;
+    box-shadow: rgba(184, 184, 184, 0.284) 0px 30px 60px -12px inset, rgba(222, 222, 222, 0.421) 0px 18px 36px -18px inset;
 }
+
+
 header>div>img{
     width: 80%;
 }
 
 header select{
     width: 90%;
-    padding: 15px;
+    padding: 10px;
     font-weight: 100px;
     font-size: 1.2rem;
     border: none;
@@ -100,7 +113,7 @@ header input{
 }
 
 header>div>div{
-    margin-top: 30px;
+    margin-top: 2em;
     border-bottom: 1px solid rgb(212, 212, 212);
     width: 40%;
     padding-bottom: 5px;
@@ -109,7 +122,7 @@ header>div>div{
 }
 #btn{
     display: block;
-    margin: 50px auto;
+    margin: 3em auto;
     border: none;
     width: 50%;
     padding: 15px 0;
@@ -119,22 +132,23 @@ header>div>div{
     letter-spacing: 3px;
     font-size: 1.3rem;
     box-shadow: rgba(164, 164, 164, 0.627) 0px 1px 2px 0px, rgba(196, 196, 196, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
 }
 
-header>div>h3, header>div>h2, p ,h3,h1{
+header>div>h3, header>div>h2, header p , header h3,header h1{
     color: rgb(219, 217, 217);
 }
 
 header>div>h2{
-    margin: 30px;
+    margin: 2vh;
 }
 header>div>h1{
-    margin-top: 20px;
+    margin-top: 2vh;
 }
 
 #head1{
     position: absolute;
-    top: 10px;
+    bottom: 30vh;
     right: 20%;
     font-weight: 100;
     letter-spacing: 3px;
@@ -142,9 +156,118 @@ header>div>h1{
     box-shadow: rgba(218, 218, 218, 0.171) 0px 30px 60px -12px inset, rgba(233, 231, 231, 0.178) 0px 18px 36px -18px inset;
     padding: 5px;
     
-    /* background-color: white; */
-    /* width: 20px; */
 }
+.para{
+    display: none;
+}
+#section-1>h1{
+    /* text-align: center; */
+    margin: 40px 0px 40px 250px;
+    font-weight:bolder;
+    font-size:2rem;
+}
+#section-1>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    width: 70%;
+    margin: auto;
+
+}
+.circle{
+  
+     width: fit-content;
+     padding: 15px;
+     border-radius: 50%;
+     border: 7px solid rgba(14, 239, 205, 0.394);
+     
+ }
+
+#section-1>div img{
+    width: 60px
+}
+
+#section-1 h3 , #section-1 p{
+    margin: 5px;
+}
+
+#section-2{
+    width: 100vw;
+    
+}
+
+#section-2 h1{
+    margin: 30px 0;
+
+    font-size: 2rem;
+ 
+}
+#section-2>div{
+    width: 70%;
+    margin: 70px auto;
+
+}
+#section-2>div>div{
+    margin: 30px 0;
+    border-bottom: 1px solid rgba(55, 55, 55, 0.377);
+    padding:10px 20px;
+    position: relative;
+    animation-delay: 2s;
+    cursor: pointer;
+
+}
+#section-2>div img{
+    position: absolute;
+    left: -1%;
+    width: 13px;
+    top: 12px;
+
+}
+#section-3{
+    margin-top: 100px;
+    padding: 20px;
+    background: rgb(234, 233, 233);
+    width: 100vw;
+
+}
+#section-3>div{
+    width: 75%;
+    margin:70px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+#section-3>div:nth-child(1)>img{
+width: 10rem;
+}
+#section-3>h1{
+    margin:auto;
+    margin-left: 12vw;
+}
+#section-3 h3 , #section-3 p{
+    margin: 10px 0 ;
+}
+
+
+
+
+@media all and (max-width:893px){
+    #head1{
+       position: absolute;
+       top: 3%;
+       left: 3%;
+       width: fit-content;
+       height: fit-content;
+        
+    }
+
+}
+
+
+
+
+
 
 
 
