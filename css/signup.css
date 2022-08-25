@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+form{
+    width: 30vw;
+    margin:50px auto;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 30px;
+
+}
+
+form input{
+    width: 90%;
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    margin-top: 5px;
+   
+}
+
+
+p,a{
+    text-align: center;
+   display: block;
+   margin: auto;
+}
+
+#submit{
+    border: none;
+    background-color: rgb(6, 201, 250);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2px;
+    cursor: pointer;
+}

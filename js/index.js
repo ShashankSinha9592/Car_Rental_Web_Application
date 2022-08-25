@@ -62,6 +62,43 @@ let imageData_2 = [
     ans: "20k+ Reviews",
   },
 ];
+
+let section_4 = [
+  {
+    img: "https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/hyundai.webp",
+    para: "Hyundai Motor Company",
+  },
+  {
+    img: "https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/edelweissFinancialServices.webp",
+    para: "Edelweiss Financial Services",
+  },
+  {
+    img: "https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/dreamIncubator.webp",
+    para: "Dream Incubator",
+  },
+  {
+    img: "https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/beenext.webp",
+    para: "Beenext",
+  },
+];
+let userName = localStorage.getItem("userName");
+
+if (userName) {
+  let tag = document.querySelector("#tag");
+  tag.innerText = "LogOut";
+  tag.setAttribute("href", "../index.html");
+  document.querySelector("#user").innerText = userName;
+} else {
+  document.querySelector("#tag").innerText = "Login/Signup";
+}
+
+document.querySelector("#tag").addEventListener("click", (e) => {
+  if (e.target.innerText == "LogOut") {
+    localStorage.removeItem("userName");
+    window.location.href = "../index.html";
+  }
+});
+
 function addData(data, element) {
   data.forEach((el) => {
     let div = document.createElement("div");
@@ -135,3 +172,23 @@ function myFunc(data, element) {
 }
 
 myFunc(imageData_2, div2);
+
+function lastsection(data, element) {
+  data.forEach((el) => {
+    let div = document.createElement("div");
+
+    let image = document.createElement("img");
+    image.setAttribute("src", el.img);
+
+    let para = document.createElement("p");
+    para.innerText = el.para;
+
+    div.append(image, para);
+
+    element.append(div);
+  });
+}
+
+let lastSection = document.querySelector("#section-4>div");
+
+lastsection(section_4, lastSection);

@@ -6,7 +6,7 @@
 }
 
 body{
-   background-color: rgb(241, 241, 241);
+   background-color: rgb(247, 245, 245);
    background-image: url("https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg");
    
     background-repeat: no-repeat;
@@ -223,10 +223,13 @@ header>div>h1{
     top: 12px;
 
 }
+#section-2 p{
+    line-height: 25px;
+}
 #section-3{
     margin-top: 100px;
     padding: 20px;
-    background: rgb(234, 233, 233);
+    background: rgb(239, 239, 239);
     width: 100vw;
 
 }
@@ -249,6 +252,29 @@ width: 10rem;
     margin: 10px 0 ;
 }
 
+#section-4>div{
+    display: flex;
+    width: 85vw;
+    justify-content: space-between;
+    margin:20px auto;
+    padding:20px 0 ;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+#section-4>div>div{
+    width: 20%;
+    text-align: center;
+}
+#section-4>div>div>img{
+    width: 100px;
+
+    padding-bottom: 30px;
+}
+#section-4>h1{
+    margin: 20px 190px;
+    color: rgb(97, 97, 97);
+}
 
 
 
