@@ -211,3 +211,7 @@ function lastsection(data, element) {
 let lastSection = document.querySelector("#section-4>div");
 
 lastsection(section_4, lastSection);
+
+document.querySelector("#btn").addEventListener("click", (e) => {
+  alert(`Thank You for Registering with us ${userName}`);
+});
