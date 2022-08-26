@@ -83,10 +83,29 @@ let section_4 = [
 ];
 let userName = localStorage.getItem("userName");
 
+let mycars = [
+  "https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg",
+  "https://images.pexels.com/photos/730134/pexels-photo-730134.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg",
+  "https://images.pexels.com/photos/94272/sports-car-pkw-auto-vehicle-94272.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg",
+];
+
+let image = document.querySelector("#main-img");
+
+setInterval(() => {
+  let randomImg = Math.floor(Math.random() * 7);
+
+  image.setAttribute("src", mycars[randomImg]);
+}, 2000);
+
+console.dir(document.body);
 if (userName) {
   let tag = document.querySelector("#tag");
   tag.innerText = "LogOut";
-  tag.setAttribute("href", "../index.html");
+  tag.setAttribute("href", "./index.html");
   document.querySelector("#user").innerText = userName;
 } else {
   document.querySelector("#tag").innerText = "Login/Signup";

@@ -31,7 +31,7 @@ form input{
 p,a{
     text-align: center;
    display: block;
-   margin: auto;
+   margin:10px auto;
 }
 
 #submit{
@@ -42,4 +42,13 @@ p,a{
     font-size: large;
     letter-spacing: 2px;
     cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(2, 187, 187)
+}
+
+a:hover{
+    color: rgb(251, 18, 18);
 }

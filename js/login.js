@@ -6,7 +6,7 @@ document.querySelector("#form").addEventListener("submit", (e) => {
   let password = document.querySelector("#password").value;
 
   if (check(email, password)) {
-    window.location.href = "../index.html";
+    window.location.href = "./index.html";
   } else {
     alert("Invalid Credentials");
   }
